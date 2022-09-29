@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="оценивание">
+    <meta name="description" content="Система оценивания.">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <a href="http://127.0.0.1:5000/log_in">Log In</a>
+            <a href="http://127.0.0.1:5000/sing_up">Sing Up</a>
+            <a><img src="" alt="Аватарка"></a>
+        </section>
+    </header>
+
+    <main>
+        <section id="sing_up">
+            <form action="http://127.0.0.1:5000/sing_up_post/" method="post">
+                <h1>
+                    Sing Up
+                </h1>
+                <input type="text" name="log_name" placeholder="Your Full Name" required><br>
+                <input type="email" name="log_email" placeholder="Your Email" required><br>
+                <input type="password" name="log_pass" placeholder="Your Password" required><br>
+                <input type="datetime" name="log_datetime" placeholder="Your Date Birthday" required><br>
+                <label>Пол<br>
+                    <label>Муржской<input type="radio" name="log_gender" value="Male" required></label><br>
+                    <label>Женский<input type="radio" name="log_gender" value="Female" required></label><br>
+                </label>
+                <input type="submit" placeholder="Submit"><br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
