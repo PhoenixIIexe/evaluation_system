@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="title">New publication</h3>
+<form method="post" action="{{ url_for('main.add_publication') }}">
+    <div>
+        <textarea name="text_publication" placeholder="Введите текст публикации:"></textarea>
+    </div>
+
+    <button>Опубликовать</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    Content
+</h1>
+<form method="get" action="{{ url_for('main.add_publication') }}">
+    <button name="add_publication">+</button>
+</form>
+
+{% for publication in publications %}
+<div>
+    <p>{{ publication.text }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
